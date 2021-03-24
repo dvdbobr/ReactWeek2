@@ -10,7 +10,8 @@ export default class Copy extends Component {
     }
     copy = () => {
         let txt = this.txtRef.current.value
-        console.log(txt);
+        document.execCommand('copy')
+        console.log(txt,document.execCommand('copy'));
     }
     render() {
         return (
