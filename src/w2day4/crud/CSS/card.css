@@ -1,0 +1,103 @@
+body {
+    background: url('https://i.pinimg.com/originals/73/0f/1c/730f1c29b41c08ad82e1433a0ef218d1.jpg');
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    padding: 40px;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    margin-left: 2rem;
+    border: 3px solid #FFDE00;
+}
+
+.card img {
+    display: block;
+    margin: 0 auto;
+    margin-left: 2px;
+    width: 100%;
+    height: 300px;
+}
+.createDiv{
+    display: flex;
+    align-items: center;
+    font-size:2rem ;
+    color: white;
+    font-weight: bold;
+}
+.createDiv input{
+    height: 40px;
+    margin: 0 2rem;
+}
+.closeIcon {
+    color: #FF0000;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+}
+
+.cards {
+    display: flex;
+    margin: 2rem;
+}
+
+.editInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 0 20px;
+}
+.editInput label{
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+.editInput input{
+    height: 40px;
+    text-align: center;
+}
+.editIcon {
+    color: greenyellow;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+.editBtns{
+    display: flex;
+    justify-content: space-between;
+}
+.editBtns button{
+    font-size: 2rem;
+    padding: 4px;
+    color: white;
+    background-color: #CC0000;
+}
+.editBtns :nth-child(1){
+    background-color: yellowgreen;
+}
+.cardTitle{
+    color: white;
+    padding: 15px;
+    background-color: #CC0000;
+}
+.createBtn{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 40px;
+    background-color: #CC0000;
+    padding: 7px;
+}

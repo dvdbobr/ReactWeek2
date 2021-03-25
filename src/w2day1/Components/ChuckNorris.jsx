@@ -21,22 +21,19 @@ export default class ChuckNorris extends Component {
     render() {
         return (
             <div>
-                
-                
                 <button onClick={this.getJoke}>RADNDOM JOKE</button>
                 <div>{this.state.joke}</div>
                 <button onClick={this.getCategories}>GET CATEGORIES</button>
                 <div>
-                {
-                    this.state.categories.map(category => {
-                        return <button key={category} onClick={()=>{this.getCategoryJoke(category)}}>{category}</button>
-                    })
-                }
+                    {
+                        this.state.categories.map(category => {
+                            return <button key={category} onClick={() => { this.getCategoryJoke(category) }}>{category}</button>
+                        })
+                    }
                 </div>
-                
-                <div>
-                {this.state.categoryJoke}
 
+                <div>
+                    {this.state.categoryJoke}
                 </div>
             </div>
         )
